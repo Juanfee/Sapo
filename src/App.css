@@ -1,0 +1,121 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 40px 30px;
+  box-sizing: border-box;
+
+  background: repeating-linear-gradient(
+    90deg,
+    #f7f3ed 0px,
+    #f7f3ed 55px,
+    #edf3f5 55px,
+    #edf3f5 85px,
+    #f7f3ed 85px,
+    #f7f3ed 140px
+  );
+
+  color: #2c2926;
+  text-align: center;
+}
+.navigation {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  z-index: 10;
+
+  display: flex;
+  gap: 10px;
+}
+
+.navigation button {
+  width: 58px;
+  height: 58px;
+
+  border: 2px solid #2c2926;
+  border-radius: 50%;
+
+  background: radial-gradient(circle at 30% 30%, #ffffff 0 8%, transparent 9%),
+    repeating-conic-gradient(from 0deg, #ffffff 0deg 18deg, #d9e8ed 18deg 36deg);
+
+  color: #2c2926;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(44, 41, 38, 0.15),
+    inset 0 0 0 3px rgba(255, 255, 255, 0.7);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navigation button:hover {
+  transform: scale(1.08) rotate(5deg);
+
+  box-shadow: 0 8px 18px rgba(44, 41, 38, 0.2),
+    inset 0 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+.navigation button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .navigation button {
+    width: 58px;
+    height: 58px;
+
+    border: 2px solid #2c2926;
+    border-radius: 50%;
+
+    background: radial-gradient(circle at 30% 30%, #ffffff 0 8%, transparent 9%),
+      repeating-conic-gradient(
+        from 0deg,
+        #ffffff 0deg 18deg,
+        #d9e8ed 18deg 36deg
+      );
+
+    color: #2c2926;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(44, 41, 38, 0.15),
+      inset 0 0 0 3px rgba(255, 255, 255, 0.7);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .navigation button:hover {
+    transform: scale(1.08) rotate(5deg);
+
+    box-shadow: 0 8px 18px rgba(44, 41, 38, 0.2),
+      inset 0 0 0 3px rgba(255, 255, 255, 0.8);
+  }
+
+  .navigation button:active {
+    transform: scale(0.95);
+  }
+}
